@@ -49,8 +49,8 @@ const translations = {
     "contactIntro": "欢迎联系我，交流项目与实习机会。",
     "phone": "电话",
     "resume": "简历",
-    "download": "索取简历 ↗",
-    "resumeFormat": "通过邮件获取",
+    "download": "下载简历 ↓",
+    "resumeFormat": "中文 DOCX · 1 页",
     "copy": "复制",
     "copied": "已复制",
     "copySuccess": "已复制 sl12719@nyu.edu",
@@ -78,7 +78,9 @@ const translations = {
     "nativeNow": "将同一款三夜潜行游戏推进到 Unity／团结引擎，以 Blender 制作场景，与 AI Agent 协作整合玩法、菜单和场景资产。",
     "nativeMilestone": "已有可运行的 macOS 构建。",
     "development": "开发中",
-    "concept": "方案探索"
+    "concept": "方案探索",
+    "enlargePortrait": "放大头像",
+    "closePortrait": "关闭头像"
   },
   "en": {
     "skip": "Skip to content",
@@ -130,8 +132,8 @@ const translations = {
     "contactIntro": "Get in touch about projects or internship opportunities.",
     "phone": "Phone",
     "resume": "Résumé",
-    "download": "Request a résumé ↗",
-    "resumeFormat": "Available by email",
+    "download": "Download résumé ↓",
+    "resumeFormat": "Chinese DOCX · 1 page",
     "copy": "Copy",
     "copied": "Copied",
     "copySuccess": "Copied sl12719@nyu.edu",
@@ -159,6 +161,8 @@ const translations = {
     "nativeNow": "Bringing the same three-night stealth game to Unity / Tuanjie, building scenes in Blender and integrating gameplay, menus and assets with AI-assisted development.",
     "nativeMilestone": "A playable macOS build is already available.",
     "development": "In development",
-    "concept": "Concept development"
+    "concept": "Concept development",
+    "enlargePortrait": "Enlarge portrait",
+    "closePortrait": "Close portrait"
   }
 };

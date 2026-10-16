@@ -67,6 +67,23 @@
     if (!storage.get('sihan-theme')) { root.dataset.theme = e.matches ? 'dark' : 'light'; updateControls(); }
   });
 
+  const portraitButton = document.querySelector('.avatar');
+  const portraitViewer = document.querySelector('#portrait-viewer');
+  portraitButton.addEventListener('click', () => {
+    portraitViewer.showModal();
+    portraitButton.setAttribute('aria-expanded', 'true');
+  });
+  portraitViewer.querySelector('.portrait-close').addEventListener('click', () => portraitViewer.close());
+  portraitViewer.addEventListener('click', event => {
+    if (event.target !== portraitViewer) return;
+    const rect = portraitViewer.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) portraitViewer.close();
+  });
+  portraitViewer.addEventListener('close', () => {
+    portraitButton.setAttribute('aria-expanded', 'false');
+    portraitButton.focus({ preventScroll: true });
+  });
+
   function updateNavigation() {
     const route = routeName(location.pathname);
     nav.querySelectorAll('a').forEach(a => {
